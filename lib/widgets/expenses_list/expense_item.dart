@@ -7,6 +7,10 @@ import 'package:expense_tracker/models/expense.dart';
 
 class ExpenseItem extends StatelessWidget {
   const ExpenseItem(this.expense, {super.key});
+  //PLEASE NOTE: "this.expense" is a "positional" argument here. If we define 
+  //it as a "named" argument, by including this inside the curly braces, 
+  //this project will report error at "expenses_list.dart" file & will not 
+  //work
   //
   //To call the class "ExpenseItem" & the argument defined here i.e. "expense"
   //we need to define the above constructor in such a way so that argument
